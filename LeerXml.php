@@ -64,7 +64,6 @@ class LeerXml
 
     public function toArray()
     {
-
         return $this->getNodo($this->item);
     }
 }
