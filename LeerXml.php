@@ -52,20 +52,6 @@ class LeerXml
         return $nodo;
     }
 
-
-    public function childsMultiple($child)
-    {
-        foreach ($child->childNodes as $key => $child) {
-            if ($child instanceof DOMElement) {
-                if ($child->childElementCount > 0) {
-                    print_r($child);
-                } else {
-                    print_r($child);
-                }
-            }
-        }
-    }
-
     public function toString()
     {
         return $this->DOM->saveXML();
