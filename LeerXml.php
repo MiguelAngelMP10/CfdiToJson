@@ -43,7 +43,7 @@ class LeerXml
                     if ($child->childElementCount > 0) {
                         $nodo[$child->localName][] =  $this->getNodo($child);
                     } else {
-                        $nodo[$child->localName] = $this->getNodo($child);
+                        $nodo[$child->localName][] =  $this->getNodo($child);
                     }
                 }
             }
